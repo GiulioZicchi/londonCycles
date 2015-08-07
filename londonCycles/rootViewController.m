@@ -41,7 +41,7 @@
     
 }
 
-@synthesize myNavigationController,zoomLevel;
+@synthesize myNavigationController,zoomLevel,stationListVC;
 
 
 //------------------------------------------------------------------------------------------------------------
@@ -94,6 +94,10 @@
     MKUserTrackingBarButtonItem *trackingButton = [[MKUserTrackingBarButtonItem alloc] initWithMapView:myMapView];
     [self setToolbarItems:@[trackingButton]];
     
+    UIBarButtonItem *listButton = [[UIBarButtonItem alloc] initWithTitle:@"List" style:UIBarButtonItemStylePlain target:self action:@selector(listStations)];
+    self.navigationItem.rightBarButtonItem = listButton;
+    
+    
 
     //-----------------------------------------------------------------------------
     // set initialised map to show London at zoom level chosen to see all bike stations
@@ -107,13 +111,21 @@
     // go get xml feed of all bike stations from TFL
     
     bikeParser = [XMLParser new];
-    [bikeParser startParse:@"http://www.tfl.gov.uk/tfl/syndication/feeds/cycle-hire/livecyclehireupdates.xml"];
-    
-    
+    [bikeParser startParse:@"https://www.tfl.gov.uk/tfl/syndication/feeds/cycle-hire/livecyclehireupdates.xml"];
     
     
 }
 
+
+//------------------------------------------------------------------------------------------------------------
+
+-(void)listStations{
+    
+    stationListVC = [[listViewController alloc] init];
+    [self.navigationController pushViewController:stationListVC animated:YES];
+    
+    
+}
 
 
 //------------------------------------------------------------------------------------------------------------

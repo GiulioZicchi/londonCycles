@@ -10,6 +10,7 @@
 #import "defines.h"
 #import "XMLParser.h"
 #import "bikeAnnotation.h"
+#import "listViewController.h"
 
 @import CoreLocation;
 @import MapKit;
@@ -20,6 +21,7 @@
 @interface rootViewController : UIViewController<CLLocationManagerDelegate,MKMapViewDelegate>
 
 @property (nonatomic,strong) UINavigationController *myNavigationController;
+@property (nonatomic,strong) listViewController *stationListVC;
 
 @property(nonatomic) float zoomLevel;
 

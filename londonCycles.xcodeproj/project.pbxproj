@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EAEC8D41B74DE8B00735D1B /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAEC8D31B74DE8B00735D1B /* listViewController.m */; };
 		4EF012FC1B6A20A400535B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF012FB1B6A20A400535B67 /* main.m */; };
 		4EF012FF1B6A20A400535B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF012FE1B6A20A400535B67 /* AppDelegate.m */; };
 		4EF013071B6A20A400535B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF013061B6A20A400535B67 /* Images.xcassets */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4EAEC8D21B74DE8B00735D1B /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = listViewController.h; path = ../listViewController.h; sourceTree = "<group>"; };
+		4EAEC8D31B74DE8B00735D1B /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = listViewController.m; path = ../listViewController.m; sourceTree = "<group>"; };
 		4EF012F61B6A20A400535B67 /* londonCycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = londonCycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF012FA1B6A20A400535B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF012FB1B6A20A400535B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				4EF012FE1B6A20A400535B67 /* AppDelegate.m */,
 				4EF0131F1B6A222B00535B67 /* rootViewController.h */,
 				4EF013201B6A222B00535B67 /* rootViewController.m */,
+				4EAEC8D21B74DE8B00735D1B /* listViewController.h */,
+				4EAEC8D31B74DE8B00735D1B /* listViewController.m */,
 				4EF013061B6A20A400535B67 /* Images.xcassets */,
 				4EF013081B6A20A400535B67 /* LaunchScreen.xib */,
 				4EF012F91B6A20A400535B67 /* Supporting Files */,
@@ -257,6 +262,7 @@
 				4EF012FC1B6A20A400535B67 /* main.m in Sources */,
 				4EF013241B6A255F00535B67 /* XMLItem.m in Sources */,
 				4EF0132B1B6A608400535B67 /* bikeAnnotation.m in Sources */,
+				4EAEC8D41B74DE8B00735D1B /* listViewController.m in Sources */,
 				4EF013271B6A25FB00535B67 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = londonCycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = londonCycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +454,7 @@
 				4EF0131B1B6A20A400535B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF0131C1B6A20A400535B67 /* Build configuration list for PBXNativeTarget "londonCyclesTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +463,7 @@
 				4EF0131E1B6A20A400535B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
