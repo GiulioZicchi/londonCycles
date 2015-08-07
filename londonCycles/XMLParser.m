@@ -61,7 +61,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     
-    NSLog(@"URL FAIL");
+    NSLog(@"URL FAIL %@",error);
     
 }
 

@@ -5,6 +5,25 @@
 //  Created by Giulio Zicchi on 30/07/2015.
 //  Copyright (c) 2015 Giulio Zicchi. All rights reserved.
 //
+//------------------------------------------------------------------------------------------------------------
+//
+// Demo, illustrating XMLParser gathering of Transport For London XML feed, pertaining to the London Cycle
+// hire scheme, and mapping of that data to an MKMapView (includes basic routing).
+//
+// XML structure can be viewed in a web browser, at:
+//
+// http://www.tfl.gov.uk/tfl/syndication/feeds/cycle-hire/livecyclehireupdates.xml
+//
+// This demo parses the XML feed, and populates an MKMapView with custom annotations, which are
+// filtered by zoom level (arbitrary, and changed by altering scale factors in defines, below.
+//
+// Tapping an annotation pops up a callout which displays data from feed, i.e. name of station,
+// and empty/available docks.
+//
+// Basic routing overlay, also.
+//
+//------------------------------------------------------------------------------------------------------------
+
 
 #import "rootViewController.h"
 #import "AppDelegate.h"
@@ -30,6 +49,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
     
     //--------------------------------------------------------------------
     // get objects from app delegate
@@ -107,10 +127,6 @@
 
 
 -(void)bikesParsed{
-    
-    ZLog(@"Got bike info...")
-    
-    NSLog(@"Got Message!");
     
     bikeAnnotations = [NSMutableArray new];
     
@@ -196,15 +212,12 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
-    //ZLog(@"LM Updating...");
     
 }
 
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation{
     
-    ZLog(@"%@",oldLocation);
-    ZLog(@"%@",newLocation);
     
 }
 
@@ -216,14 +229,12 @@
 
 - (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated{
     
-    NSLog(@"Region will change");
 }
 
 //------------------------------------------------------------------------------------------------
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
     
-    NSLog(@"Region did change");
     
     if (zoomLevel!= myMapView.region.span.longitudeDelta) {
         [self filterAnnotations:bikeAnnotations];
@@ -270,7 +281,6 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view{
     
-    NSLog(@"Annotation Selected");
     
     view.canShowCallout = YES;
     //view.image = [ UIImage imageNamed:@"bike.gif" ];
@@ -286,7 +296,6 @@
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
     
-    ZLog(@"%@",control)
     
     [myMapView removeOverlays:myMapView.overlays];
     
@@ -313,7 +322,7 @@
         
         if(error){
             
-            ZLog(@"Shitting Cock!")
+            // degrade gracefully here...
             
         } else {
             
@@ -330,9 +339,6 @@
 
 -(void)showDirectionsOnMap:(MKDirectionsResponse *)response{
 
-    
-    ZLog(@"NUMBER OF ROUTES: %lu",(unsigned long)[response.routes count])
-    
 
     for(MKRoute *route in response.routes){
 
