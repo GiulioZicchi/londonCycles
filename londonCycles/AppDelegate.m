@@ -7,16 +7,49 @@
 //
 
 #import "AppDelegate.h"
+#import "rootViewController.h"
+
 
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    
+    
+}
+    
+@synthesize myLocationManager,myRootViewController;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if ([myLocationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [myLocationManager requestWhenInUseAuthorization];
+        
+    }
+    
+    /*
+    if ([myLocationManager respondsToSelector:@selector(requestAlwaysAuthorization)]) {
+        [myLocationManager requestAlwaysAuthorization];
+        
+    }
+    */
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    myRootViewController = [[rootViewController alloc] initWithNibName:nil bundle:nil];
+    self.window.rootViewController = myRootViewController;
+    UINavigationController *navigationController=[[UINavigationController alloc] initWithRootViewController:myRootViewController];
+    [self.window addSubview:navigationController.view];
+    
+    // MUST store pointer into root VC property, else nav VC comes up as (null) in root VC
+    
+    myRootViewController.myNavigationController = navigationController;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

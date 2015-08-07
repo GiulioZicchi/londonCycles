@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreLocation;
+
+@class rootViewController;
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property (strong, nonatomic) CLLocationManager *myLocationManager;
+@property (strong, nonatomic) rootViewController *myRootViewController;
 @end
 

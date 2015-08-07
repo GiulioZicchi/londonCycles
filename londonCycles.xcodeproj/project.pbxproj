@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		4EF012FC1B6A20A400535B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF012FB1B6A20A400535B67 /* main.m */; };
 		4EF012FF1B6A20A400535B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF012FE1B6A20A400535B67 /* AppDelegate.m */; };
-		4EF013021B6A20A400535B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF013011B6A20A400535B67 /* ViewController.m */; };
-		4EF013051B6A20A400535B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF013031B6A20A400535B67 /* Main.storyboard */; };
 		4EF013071B6A20A400535B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF013061B6A20A400535B67 /* Images.xcassets */; };
 		4EF0130A1B6A20A400535B67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF013081B6A20A400535B67 /* LaunchScreen.xib */; };
 		4EF013161B6A20A400535B67 /* londonCyclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF013151B6A20A400535B67 /* londonCyclesTests.m */; };
+		4EF013211B6A222B00535B67 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF013201B6A222B00535B67 /* rootViewController.m */; };
+		4EF013241B6A255F00535B67 /* XMLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF013231B6A255F00535B67 /* XMLItem.m */; };
+		4EF013271B6A25FB00535B67 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF013261B6A25FB00535B67 /* XMLParser.m */; };
+		4EF0132B1B6A608400535B67 /* bikeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0132A1B6A608400535B67 /* bikeAnnotation.m */; };
+		4EF0132F1B6A657700535B67 /* bike.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4EF0132E1B6A657700535B67 /* bike.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,21 @@
 		4EF012FB1B6A20A400535B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4EF012FD1B6A20A400535B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4EF012FE1B6A20A400535B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4EF013001B6A20A400535B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4EF013011B6A20A400535B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4EF013041B6A20A400535B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EF013061B6A20A400535B67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EF013091B6A20A400535B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4EF0130F1B6A20A400535B67 /* londonCyclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = londonCyclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF013141B6A20A400535B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EF013151B6A20A400535B67 /* londonCyclesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = londonCyclesTests.m; sourceTree = "<group>"; };
+		4EF0131F1B6A222B00535B67 /* rootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
+		4EF013201B6A222B00535B67 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
+		4EF013221B6A255F00535B67 /* XMLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLItem.h; sourceTree = "<group>"; };
+		4EF013231B6A255F00535B67 /* XMLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLItem.m; sourceTree = "<group>"; };
+		4EF013251B6A25FB00535B67 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		4EF013261B6A25FB00535B67 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		4EF013281B6A2F3400535B67 /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		4EF013291B6A608400535B67 /* bikeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bikeAnnotation.h; sourceTree = "<group>"; };
+		4EF0132A1B6A608400535B67 /* bikeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bikeAnnotation.m; sourceTree = "<group>"; };
+		4EF0132E1B6A657700535B67 /* bike.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bike.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +91,18 @@
 		4EF012F81B6A20A400535B67 /* londonCycles */ = {
 			isa = PBXGroup;
 			children = (
+				4EF0132C1B6A656100535B67 /* assets */,
+				4EF013281B6A2F3400535B67 /* defines.h */,
+				4EF013221B6A255F00535B67 /* XMLItem.h */,
+				4EF013231B6A255F00535B67 /* XMLItem.m */,
+				4EF013251B6A25FB00535B67 /* XMLParser.h */,
+				4EF013261B6A25FB00535B67 /* XMLParser.m */,
+				4EF013291B6A608400535B67 /* bikeAnnotation.h */,
+				4EF0132A1B6A608400535B67 /* bikeAnnotation.m */,
 				4EF012FD1B6A20A400535B67 /* AppDelegate.h */,
 				4EF012FE1B6A20A400535B67 /* AppDelegate.m */,
-				4EF013001B6A20A400535B67 /* ViewController.h */,
-				4EF013011B6A20A400535B67 /* ViewController.m */,
-				4EF013031B6A20A400535B67 /* Main.storyboard */,
+				4EF0131F1B6A222B00535B67 /* rootViewController.h */,
+				4EF013201B6A222B00535B67 /* rootViewController.m */,
 				4EF013061B6A20A400535B67 /* Images.xcassets */,
 				4EF013081B6A20A400535B67 /* LaunchScreen.xib */,
 				4EF012F91B6A20A400535B67 /* Supporting Files */,
@@ -117,6 +134,22 @@
 				4EF013141B6A20A400535B67 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EF0132C1B6A656100535B67 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0132D1B6A656700535B67 /* gfx */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		4EF0132D1B6A656700535B67 /* gfx */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0132E1B6A657700535B67 /* bike.gif */,
+			);
+			name = gfx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF013051B6A20A400535B67 /* Main.storyboard in Resources */,
 				4EF0130A1B6A20A400535B67 /* LaunchScreen.xib in Resources */,
+				4EF0132F1B6A657700535B67 /* bike.gif in Resources */,
 				4EF013071B6A20A400535B67 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF013021B6A20A400535B67 /* ViewController.m in Sources */,
 				4EF012FF1B6A20A400535B67 /* AppDelegate.m in Sources */,
+				4EF013211B6A222B00535B67 /* rootViewController.m in Sources */,
 				4EF012FC1B6A20A400535B67 /* main.m in Sources */,
+				4EF013241B6A255F00535B67 /* XMLItem.m in Sources */,
+				4EF0132B1B6A608400535B67 /* bikeAnnotation.m in Sources */,
+				4EF013271B6A25FB00535B67 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +280,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4EF013031B6A20A400535B67 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EF013041B6A20A400535B67 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4EF013081B6A20A400535B67 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,8 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = londonCycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,8 +388,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = londonCycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
