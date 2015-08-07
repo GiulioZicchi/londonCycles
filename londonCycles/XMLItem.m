@@ -13,5 +13,4 @@
 @synthesize name,terminalName,lat,nbBikes,nbEmptyDocks;
 @synthesize longitude;
 
-
 @end

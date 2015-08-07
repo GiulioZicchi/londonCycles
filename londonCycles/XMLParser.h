@@ -10,7 +10,6 @@
 #import "defines.h"
 #import "XMLItem.h"
 
-
 @interface XMLParser : NSObject<NSXMLParserDelegate> {
     //This variable will eventually (once the asynchronous event has completed) hold all the XMLItems in the feed
     NSMutableArray *allItems;

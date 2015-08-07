@@ -17,7 +17,6 @@
 
 @class AppDelegate;
 
-
 @interface rootViewController : UIViewController<CLLocationManagerDelegate,MKMapViewDelegate>
 
 @property (nonatomic,strong) UINavigationController *myNavigationController;

@@ -17,7 +17,6 @@
 @synthesize currentValue;
 @synthesize parsing;
 
-
 //-----------------------------------------------------------------------------------------------------------
 
 - (void)startParse:(NSString *)url{

@@ -16,7 +16,6 @@
 
 @implementation AppDelegate{
     
-    
 }
     
 @synthesize myLocationManager,myRootViewController;

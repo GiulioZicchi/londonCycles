@@ -19,7 +19,6 @@
     NSString *longitude;
     
     
-    
 }
 
 @property (nonatomic, retain) NSString *name;
